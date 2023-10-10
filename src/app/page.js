@@ -1,9 +1,14 @@
-import {Gallery} from "./gallery";
+import { Gallery } from "./gallery";
+import { FragmentsDemo } from "./fragmentdemo";
 export default function Home() {
   return (
-        <Gallery />
-      );
-    }
-    
-  
+    <>
+      <Gallery />
+      <FragmentsDemo />
+    </>
+
+  );
+}
+
+
 
