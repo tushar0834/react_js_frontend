@@ -7,7 +7,7 @@ function Profile() {
     );
   }
   
-  export default function Gallery() {
+  export  function Gallery() {
     return (
       <section>
         <h1>Amazing scientists</h1>
