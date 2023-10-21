@@ -1,7 +1,8 @@
 function Profile() {
+    const imgpath = 'https://i.imgur.com/QIrZWGIs.jpg'
     return (
       <img
-        src="https://i.imgur.com/QIrZWGIs.jpg"
+        src={imgpath}
         alt="Alan L. Hart"
       />
     );
