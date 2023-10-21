@@ -9,9 +9,10 @@ function Profile() {
   }
   
   export  function Gallery() {
+    const sname = 'Amazing scientists'
     return (
       <section>
-        <h1>Amazing scientists</h1>
+        <h1>{sname}</h1>
         <Profile />
         <Profile />
         <Profile />
