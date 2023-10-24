@@ -6,15 +6,19 @@ function Profile() {
   } else {
     imgpath = 'https://i.imgur.com/QIrZWGIs.jpg'
   }
+  const people = [
+    'Creola Katherine Johnson: mathematician',
+    'Mario José Molina-Pasquel Henríquez: chemist',
+    'Mohammad Abdus Salam: physicist',
+    'Percy Lavon Julian: chemist',
+    'Subrahmanyan Chandrasekhar: astrophysicist'
+  ];
+  var listItems = people.map(person => <li key={person}>{person}</li>);
   return (
     <>
-      <img
-        src={imgpath}
-        alt="Alan L. Hart"
-      />
-      <>
-        {isDifferentImage && '✔'}
-      </>
+      <ul>
+        { listItems }
+      </ul>
     </>
   );
 }
@@ -24,8 +28,6 @@ export function Gallery() {
   return (
     <section>
       <h1>{sname}</h1>
-      <Profile />
-      <Profile />
       <Profile />
     </section>
   );
