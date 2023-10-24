@@ -1,3 +1,5 @@
+"use client"
+
 function Profile() {
   let isDifferentImage = false;
   var imgpath = ''
@@ -5,14 +7,15 @@ function Profile() {
     imgpath = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png'
   } else {
     imgpath = 'https://i.imgur.com/QIrZWGIs.jpg'
-  }
+  }  
   const people = [
     'Creola Katherine Johnson: mathematician',
     'Mario José Molina-Pasquel Henríquez: chemist',
     'Mohammad Abdus Salam: physicist',
     'Percy Lavon Julian: chemist',
     'Subrahmanyan Chandrasekhar: astrophysicist'
-  ];
+  ];  
+
   var listItems = people.map(person => <li key={person}>{person}</li>);
   return (
     <>
@@ -23,11 +26,16 @@ function Profile() {
   );
 }
 
+
 export function Gallery() {
+  
+  async function handleSubmit() {
+    alert("sad")
+  }
   const sname = 'Amazing scient'
   return (
     <section>
-      <h1>{sname}</h1>
+      <h1 onClick={handleSubmit}>{sname}</h1>
       <Profile />
     </section>
   );
